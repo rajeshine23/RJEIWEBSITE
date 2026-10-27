@@ -6,11 +6,11 @@ This guide explains how to configure, verify, and monitor Google Analytics 4 (GA
 
 ## 🔑 Environment Variables
 
-Add the following variables in `.env.local` for local development, or in your Vercel Project Settings (`Settings > Environment Variables`):
+The production credentials have been configured in `.env.local` and `.env.production`:
 
 ```bash
-NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-NEXT_PUBLIC_POSTHOG_KEY=phc_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-Y53V4D67TS
+NEXT_PUBLIC_POSTHOG_KEY=phc_x3kWyozsxZfzmxqN6HuwHDwD6dpbnMuQYsXYUNV7TJW9
 NEXT_PUBLIC_POSTHOG_HOST=https://app.posthog.com
 NEXT_PUBLIC_SITE_URL=https://rajishine.com
 ```
