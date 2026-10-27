@@ -36,14 +36,14 @@ export function SocialGallery({
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {images.map((img, idx) => (
             <a
               key={idx}
               href={instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative aspect-square rounded overflow-hidden bg-brand-champagne/20 block"
+              className="group relative w-full aspect-square rounded-sm overflow-hidden bg-brand-champagne/20 block border border-brand-champagne/40 shadow-sm"
             >
               <Image
                 src={img.src}
@@ -52,8 +52,11 @@ export function SocialGallery({
                 sizes="(max-width: 640px) 50vw, 25vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-brand-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                <InstagramIcon className="w-8 h-8" />
+              <div className="absolute inset-0 bg-brand-espresso/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center text-white space-y-2 p-4 text-center">
+                <InstagramIcon className="w-8 h-8 text-brand-gold-light" />
+                <span className="text-[11px] font-semibold tracking-wider uppercase">
+                  View on Instagram
+                </span>
               </div>
             </a>
           ))}

@@ -5,6 +5,7 @@ import {
   getAllCategories,
   getAllCollections,
   getAllReviews,
+  getSiteSettings,
 } from "@/lib/data/catalogue";
 import { HeroBanner } from "@/components/homepage/HeroBanner";
 import { CategoryTiles } from "@/components/homepage/CategoryTiles";
@@ -22,6 +23,7 @@ export default function HomePage() {
   const categories = getAllCategories();
   const collections = getAllCollections();
   const reviews = getAllReviews();
+  const settings = getSiteSettings();
 
   return (
     <div className="flex flex-col">
@@ -99,6 +101,7 @@ export default function HomePage() {
                 key={section.sectionId}
                 title={section.title}
                 subtitle={section.subtitle}
+                instagramUrl={settings.instagramUrl}
               />
             );
 

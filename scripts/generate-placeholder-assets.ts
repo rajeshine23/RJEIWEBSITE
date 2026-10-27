@@ -405,7 +405,7 @@ async function generateAllAssets() {
       width: 600,
       height: 600,
       title: "Bridal Grace",
-      subtitle: "@rajishine.jewels",
+      subtitle: "@raji_fashion_jewelry",
       bgColor: "#FAF6EF",
     },
     {
@@ -413,7 +413,7 @@ async function generateAllAssets() {
       width: 600,
       height: 600,
       title: "Royal Temple Haram",
-      subtitle: "@rajishine.jewels",
+      subtitle: "@raji_fashion_jewelry",
       bgColor: "#FAF6EF",
     },
     {
@@ -421,7 +421,7 @@ async function generateAllAssets() {
       width: 600,
       height: 600,
       title: "Pearl Jhumka Moments",
-      subtitle: "@rajishine.jewels",
+      subtitle: "@raji_fashion_jewelry",
       bgColor: "#FAF6EF",
     },
     {
@@ -429,7 +429,7 @@ async function generateAllAssets() {
       width: 600,
       height: 600,
       title: "Antique Bangles Stack",
-      subtitle: "@rajishine.jewels",
+      subtitle: "@raji_fashion_jewelry",
       bgColor: "#FAF6EF",
     },
 
