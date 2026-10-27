@@ -40,126 +40,129 @@ export function Header({ categories, collections, brandName = "RAJISHINE" }: Hea
   return (
     <header className="sticky top-0 z-40 bg-brand-ivory/95 backdrop-blur-md border-b border-brand-champagne/40 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Mobile Menu Button */}
-          <div className="flex items-center lg:hidden">
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-brand-espresso hover:text-brand-maroon focus:outline-none"
-              aria-label="Toggle navigation menu"
-              aria-expanded={mobileMenuOpen}
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-20">
+          {/* Left Column (1fr) */}
+          <div className="flex items-center justify-start">
+            {/* Mobile Menu Button */}
+            <div className="flex items-center lg:hidden">
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="p-2 text-brand-espresso hover:text-brand-maroon focus:outline-none"
+                aria-label="Toggle navigation menu"
+                aria-expanded={mobileMenuOpen}
+              >
+                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
 
-            <button
-              type="button"
-              onClick={() => setSearchOpen(!searchOpen)}
-              className="p-2 text-brand-espresso hover:text-brand-maroon focus:outline-none ml-1"
-              aria-label="Search catalogue"
-            >
-              <Search className="w-5 h-5" />
-            </button>
+              <button
+                type="button"
+                onClick={() => setSearchOpen(!searchOpen)}
+                className="p-2 text-brand-espresso hover:text-brand-maroon focus:outline-none ml-1"
+                aria-label="Search catalogue"
+              >
+                <Search className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Desktop Left Nav */}
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-sm font-medium tracking-wider uppercase text-brand-espresso/80">
+              <Link
+                href="/"
+                className={`hover:text-brand-maroon transition-colors ${
+                  pathname === "/" ? "text-brand-maroon font-semibold" : ""
+                }`}
+              >
+                Home
+              </Link>
+
+              {/* Dynamic Categories Dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setCategoriesDropdownOpen(true)}
+                onMouseLeave={() => setCategoriesDropdownOpen(false)}
+              >
+                <button
+                  type="button"
+                  className="flex items-center space-x-1 hover:text-brand-maroon transition-colors py-2 focus:outline-none"
+                  aria-expanded={categoriesDropdownOpen}
+                >
+                  <span>Categories</span>
+                  <ChevronDown className="w-3.5 h-3.5 opacity-60" />
+                </button>
+
+                {categoriesDropdownOpen && (
+                  <div className="absolute left-0 top-full w-56 bg-brand-ivory border border-brand-champagne/60 shadow-editorial rounded py-2 z-50">
+                    {categories.map((cat) => (
+                      <Link
+                        key={cat.slug}
+                        href={`/categories/${cat.slug}`}
+                        onClick={() => trackCategorySelect(cat.categoryName, cat.slug)}
+                        className="block px-4 py-2.5 text-xs tracking-wider text-brand-espresso hover:bg-brand-champagne/30 hover:text-brand-maroon transition-colors"
+                      >
+                        {cat.categoryName} ({cat.productCount})
+                      </Link>
+                    ))}
+                    <div className="border-t border-brand-champagne/40 my-1"></div>
+                    <Link
+                      href="/categories"
+                      className="block px-4 py-2 text-xs tracking-wider font-semibold text-brand-gold-dark hover:bg-brand-champagne/30"
+                    >
+                      View All Categories →
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Collections Dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setCollectionsDropdownOpen(true)}
+                onMouseLeave={() => setCollectionsDropdownOpen(false)}
+              >
+                <button
+                  type="button"
+                  className="flex items-center space-x-1 hover:text-brand-maroon transition-colors py-2 focus:outline-none"
+                  aria-expanded={collectionsDropdownOpen}
+                >
+                  <span>Collections</span>
+                  <ChevronDown className="w-3.5 h-3.5 opacity-60" />
+                </button>
+
+                {collectionsDropdownOpen && (
+                  <div className="absolute left-0 top-full w-60 bg-brand-ivory border border-brand-champagne/60 shadow-editorial rounded py-2 z-50">
+                    {collections.map((col) => (
+                      <Link
+                        key={col.slug}
+                        href={`/collections/${col.slug}`}
+                        onClick={() => trackCollectionSelect(col.collectionName, col.slug)}
+                        className="block px-4 py-2.5 text-xs tracking-wider text-brand-espresso hover:bg-brand-champagne/30 hover:text-brand-maroon transition-colors"
+                      >
+                        {col.collectionName}
+                      </Link>
+                    ))}
+                    <div className="border-t border-brand-champagne/40 my-1"></div>
+                    <Link
+                      href="/collections"
+                      className="block px-4 py-2 text-xs tracking-wider font-semibold text-brand-gold-dark hover:bg-brand-champagne/30"
+                    >
+                      Browse All Collections →
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                href="/collections/new-arrivals"
+                className="hover:text-brand-maroon transition-colors"
+              >
+                New In
+              </Link>
+            </nav>
           </div>
 
-          {/* Desktop Left Nav */}
-          <nav className="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wider uppercase text-brand-espresso/80">
-            <Link
-              href="/"
-              className={`hover:text-brand-maroon transition-colors ${
-                pathname === "/" ? "text-brand-maroon font-semibold" : ""
-              }`}
-            >
-              Home
-            </Link>
-
-            {/* Dynamic Categories Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setCategoriesDropdownOpen(true)}
-              onMouseLeave={() => setCategoriesDropdownOpen(false)}
-            >
-              <button
-                type="button"
-                className="flex items-center space-x-1 hover:text-brand-maroon transition-colors py-2 focus:outline-none"
-                aria-expanded={categoriesDropdownOpen}
-              >
-                <span>Categories</span>
-                <ChevronDown className="w-3.5 h-3.5 opacity-60" />
-              </button>
-
-              {categoriesDropdownOpen && (
-                <div className="absolute left-0 top-full w-56 bg-brand-ivory border border-brand-champagne/60 shadow-editorial rounded py-2 z-50">
-                  {categories.map((cat) => (
-                    <Link
-                      key={cat.slug}
-                      href={`/categories/${cat.slug}`}
-                      onClick={() => trackCategorySelect(cat.categoryName, cat.slug)}
-                      className="block px-4 py-2.5 text-xs tracking-wider text-brand-espresso hover:bg-brand-champagne/30 hover:text-brand-maroon transition-colors"
-                    >
-                      {cat.categoryName} ({cat.productCount})
-                    </Link>
-                  ))}
-                  <div className="border-t border-brand-champagne/40 my-1"></div>
-                  <Link
-                    href="/categories"
-                    className="block px-4 py-2 text-xs tracking-wider font-semibold text-brand-gold-dark hover:bg-brand-champagne/30"
-                  >
-                    View All Categories →
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* Collections Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setCollectionsDropdownOpen(true)}
-              onMouseLeave={() => setCollectionsDropdownOpen(false)}
-            >
-              <button
-                type="button"
-                className="flex items-center space-x-1 hover:text-brand-maroon transition-colors py-2 focus:outline-none"
-                aria-expanded={collectionsDropdownOpen}
-              >
-                <span>Collections</span>
-                <ChevronDown className="w-3.5 h-3.5 opacity-60" />
-              </button>
-
-              {collectionsDropdownOpen && (
-                <div className="absolute left-0 top-full w-60 bg-brand-ivory border border-brand-champagne/60 shadow-editorial rounded py-2 z-50">
-                  {collections.map((col) => (
-                    <Link
-                      key={col.slug}
-                      href={`/collections/${col.slug}`}
-                      onClick={() => trackCollectionSelect(col.collectionName, col.slug)}
-                      className="block px-4 py-2.5 text-xs tracking-wider text-brand-espresso hover:bg-brand-champagne/30 hover:text-brand-maroon transition-colors"
-                    >
-                      {col.collectionName}
-                    </Link>
-                  ))}
-                  <div className="border-t border-brand-champagne/40 my-1"></div>
-                  <Link
-                    href="/collections"
-                    className="block px-4 py-2 text-xs tracking-wider font-semibold text-brand-gold-dark hover:bg-brand-champagne/30"
-                  >
-                    Browse All Collections →
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            <Link
-              href="/collections/new-arrivals"
-              className="hover:text-brand-maroon transition-colors"
-            >
-              New In
-            </Link>
-          </nav>
-
-          {/* Center Brand Wordmark / Logo */}
-          <div className="flex-1 lg:flex-initial text-center">
+          {/* Center Brand Wordmark / Logo (Strict Mathematical Center) */}
+          <div className="flex items-center justify-center text-center px-4">
             <Link href="/" className="inline-block focus:outline-none group">
               <span className="font-serif text-2xl sm:text-3xl font-bold tracking-[0.25em] text-brand-espresso group-hover:text-brand-maroon transition-colors uppercase block">
                 {brandName}
@@ -170,8 +173,8 @@ export function Header({ categories, collections, brandName = "RAJISHINE" }: Hea
             </Link>
           </div>
 
-          {/* Right Actions */}
-          <div className="flex items-center space-x-4 sm:space-x-6">
+          {/* Right Column (1fr) */}
+          <div className="flex items-center justify-end space-x-4 sm:space-x-6">
             <button
               type="button"
               onClick={() => setSearchOpen(!searchOpen)}
