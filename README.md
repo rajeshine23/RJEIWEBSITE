@@ -30,7 +30,7 @@ The website operates as a pure static storefront where:
 - **CSV Engine:** RFC 4180-compliant CSV parser with strict type validation
 - **State Management:** Static-compatible Persistent Cart via browser `localStorage`
 - **Testing:** Vitest with 21 automated tests covering catalogue validation, cart logic, pricing, and WhatsApp checkout formatting
-- **Hosting:** Vercel (automated continuous deployment on Git push)
+- **Hosting:** GitHub Pages / Vercel (automated continuous deployment on Git push via GitHub Actions)
 
 ---
 
@@ -211,11 +211,20 @@ Storefront analytics are integrated with:
 
 ---
 
-## 🚀 Deployment & Commercial Hosting
+## 🚀 Deployment & Hosting
 
-- Continuous deployment is pre-configured via `.github/workflows/ci.yml`.
-- Hosted on **Vercel** with static output export.
-- **Important Note on Vercel Plan:** Commercial stores require a **Vercel Pro plan** (the Hobby plan is restricted to non-commercial personal projects per Vercel policy: [https://vercel.com/docs/plans/hobby](https://vercel.com/docs/plans/hobby)).
+The storefront is fully static (`output: 'export'`) and can be deployed anywhere:
 
-👉 *See [`docs/VERCEL_DEPLOYMENT.md`](docs/VERCEL_DEPLOYMENT.md) for full deployment instructions.*
+### Recommended: GitHub Pages (100% Free & Commercial-Friendly)
+- Automated deployment workflow is pre-configured in `.github/workflows/deploy-pages.yml`.
+- Custom domain (`rajishine.com`) is supported with free automatic HTTPS.
+- Zero extra accounts needed; fully hosted directly from this repository.
+
+👉 *See [`docs/GITHUB_PAGES_SETUP.md`](docs/GITHUB_PAGES_SETUP.md) for step-by-step setup and DNS instructions.*
+
+### Alternative: Vercel
+- Hosted with static output export.
+- **Note on Vercel Plan:** Commercial stores require a **Vercel Pro plan** (the free Hobby plan is restricted to non-commercial personal projects per Vercel policy: [https://vercel.com/docs/plans/hobby](https://vercel.com/docs/plans/hobby)).
+
+👉 *See [`docs/VERCEL_DEPLOYMENT.md`](docs/VERCEL_DEPLOYMENT.md) for full Vercel instructions.*
 👉 *See [`docs/MIGRATION_READINESS.md`](docs/MIGRATION_READINESS.md) for our commerce migration architecture.*

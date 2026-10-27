@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || undefined;
+
 const nextConfig: NextConfig = {
-  // Static export ready and fully compatible with static hosting / Vercel
+  // Static export ready and fully compatible with static hosting / GitHub Pages
+  basePath,
   images: {
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
