@@ -1,15 +1,20 @@
 import type { NextConfig } from "next";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || undefined;
+// When building for GitHub Pages repo domain (rajeshine23.github.io/RJEIWEBSITE), use /RJEIWEBSITE
+// In local development or when a custom domain is active, use root ""
+const isProd = process.env.NODE_ENV === "production";
+const isCustomDomain = process.env.NEXT_PUBLIC_CUSTOM_DOMAIN === "true";
+const basePath = isProd && !isCustomDomain ? "/RJEIWEBSITE" : "";
 
 const nextConfig: NextConfig = {
-  // Static export ready and fully compatible with static hosting / GitHub Pages
-  basePath,
+  basePath: basePath || undefined,
+  assetPrefix: basePath || undefined,
   images: {
+    loader: "custom",
+    loaderFile: "./src/lib/image-loader.ts",
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    unoptimized: true, // Ideal for static export & local image hosting without external image optimization service dependencies
   },
   output: "export",
   trailingSlash: true,
