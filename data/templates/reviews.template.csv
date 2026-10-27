@@ -1,0 +1,2 @@
+review_id,customer_display_name,review_text,product_id,image_path,source,display_order,enabled
+REV001,Priya S.,"The Temple Necklace was stunning in photographs and felt remarkably regal.",RJS00001,/images/reviews/customer-1.webp,Bengaluru Bride,1,true

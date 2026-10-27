@@ -1,0 +1,3 @@
+product_id,color,image_path,sort_order,is_primary
+RJS00001,Gold,/images/products/RJS00001/gold-front.webp,1,true
+RJS00001,Gold,/images/products/RJS00001/gold-back.webp,2,false

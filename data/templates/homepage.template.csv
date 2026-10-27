@@ -1,0 +1,2 @@
+section_id,section_type,title,subtitle,image_path,mobile_image_path,cta_label,cta_url,display_order,enabled
+hero-1,hero_banner,"Timeless Bridal Opulence","Handcrafted Indian Jewellery","/images/homepage/hero-bridal.webp","/images/homepage/hero-bridal-mobile.webp","Explore Catalogue","/categories/bridal-jewellery",1,true

@@ -1,0 +1,5 @@
+category_name,slug,image_path,display_order,enabled
+Necklaces,necklaces,/images/categories/necklaces.webp,1,true
+Earrings,earrings,/images/categories/earrings.webp,2,true
+Bangles,bangles,/images/categories/bangles.webp,3,true
+Bridal Jewellery,bridal-jewellery,/images/categories/bridal-jewellery.webp,4,true

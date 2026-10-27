@@ -1,0 +1,5 @@
+collection_id,collection_name,slug,description,image_path,product_ids,display_order,show_on_homepage
+COL001,The Bridal Edit,bridal-edit,"Opulent heirloom necklaces, chokers, and maang tikkas crafted for majestic wedding moments.",/images/collections/bridal-edit.webp,"RJS00001;RJS00003;RJS00007",1,true
+COL002,Royal Temple Treasures,royal-temple,"Sacred motifs and antique finishes inspired by timeless South Indian temple architecture.",/images/collections/royal-temple.webp,"RJS00001;RJS00005;RJS00008",2,true
+COL003,Festive Favourites,festive-favourites,"Lightweight elegance and sparkling kundan designs for festive gatherings and celebrations.",/images/collections/festive-favourites.webp,"RJS00002;RJS00004;RJS00006",3,true
+COL004,New Arrivals,new-arrivals,"Discover our newest creations fresh from our artisanal workshops.",/images/collections/new-arrivals.webp,"RJS00003;RJS00004;RJS00007",4,true

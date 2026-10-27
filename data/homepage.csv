@@ -1,0 +1,11 @@
+section_id,section_type,title,subtitle,image_path,mobile_image_path,cta_label,cta_url,display_order,enabled
+announcement-1,announcement_bar,"Festive Season Exclusive: Express Dispatch across India on orders above ₹2,999","","","","","",1,true
+hero-1,hero_banner,"Timeless Bridal Opulence","Handcrafted Indian Jewellery For Your Most Cherished Celebrations","/images/homepage/hero-bridal.webp","/images/homepage/hero-bridal-mobile.webp","Explore Catalogue","/categories/bridal-jewellery",2,true
+categories-1,shop_by_category,"Shop By Category","Curated ornaments designed with sacred geometry and heirloom aesthetics","","","","",3,true
+collections-1,featured_collections,"Curated Collections","Explore our signature bridal, festive, and temple edits","","","","",4,true
+new-arrivals-1,new_arrivals,"New Arrivals","Recently introduced handcrafted jewellery pieces","","","View All New","/collections/new-arrivals",5,true
+brand-story-1,brand_story,"The RAJISHINE Legacy","Every RAJISHINE creation begins with a reverence for India’s glorious jewellery traditions. From antique temple kadas to royal kundan bridal sets, our artisans preserve heritage techniques while delivering modern comfort and supreme finish.","/images/homepage/brand-craft.webp","","Our Story","/about",6,true
+value-props-1,value_propositions,"Why Choose RAJISHINE","Authentic Indian Artistry • Premium Finish • Personalized WhatsApp Assistance • Secure Global Packaging","","","","",7,true
+reviews-1,reviews_section,"Client Love","Reflections of joy from our patrons across India and worldwide","","","","",8,true
+social-1,social_gallery,"Follow Our World on Instagram","@rajishine.jewels • Tag #RajiShineBride to be featured","","","","",9,true
+closing-cta-1,closing_cta,"Ready for Your Special Day?","Connect directly with our jewellery concierge on WhatsApp to curate your bespoke trousseau.","","","Chat on WhatsApp","/checkout",10,true

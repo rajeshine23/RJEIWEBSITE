@@ -1,0 +1,4 @@
+review_id,customer_display_name,review_text,product_id,image_path,source,display_order,enabled
+REV001,Priya S. (Sample Demonstration),"The Temple Necklace exceeded all expectations for my sister's engagement. The antique finish looks stunning in photographs and feels remarkably regal.",RJS00001,/images/reviews/customer-1.webp,Bengaluru Bride,1,true
+REV002,Ananya M. (Sample Demonstration),"Ordered the bridal necklace set to the UK. The craftsmanship is breathtaking, and the WhatsApp coordination made the entire ordering process seamless.",RJS00003,/images/reviews/customer-2.webp,International Patron,2,true
+REV003,Kavitha R. (Sample Demonstration),"The pearl jhumkas are lightweight yet majestic. Perfect balance of traditional grandeur and all-day comfort for festive celebrations.",RJS00002,/images/reviews/customer-3.webp,Chennai Patron,3,true

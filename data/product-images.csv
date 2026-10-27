@@ -1,0 +1,5 @@
+product_id,color,image_path,sort_order,is_primary
+RJS00003,Ruby Red,/images/products/RJS00003/red-front.webp,1,true
+RJS00003,Ruby Red,/images/products/RJS00003/red-detail.webp,2,false
+RJS00003,Emerald Green,/images/products/RJS00003/green-front.webp,1,true
+RJS00003,Emerald Green,/images/products/RJS00003/green-detail.webp,2,false
