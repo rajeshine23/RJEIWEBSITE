@@ -1,9 +1,10 @@
 product_id,product_name,category,description,images,product_price,discounted_price,quantity,color
-RJS00001,Temple Necklace,Necklaces,"Traditional temple-inspired necklace featuring sacred motifs and antique handcrafting","/images/products/RJS00001/gold-front.webp;/images/products/RJS00001/gold-detail.webp",2499,1999,"5;2","Gold;Antique Gold"
-RJS00002,Pearl Jhumkas,Earrings,"Elegant pearl-look jhumka earrings with intricate filigree bells and lustrous drops","/images/products/RJS00002/pearl.webp",899,,"12","Pearl White"
-RJS00003,Bridal Necklace Set,Bridal Jewellery,"Statement jewellery set for festive celebrations and royal trousseaus","/images/products/RJS00003/red-front.webp;/images/products/RJS00003/green-front.webp",3499,2999,"3;4","Ruby Red;Emerald Green"
-RJS00004,Royal Kundan Choker,Necklaces,"Regal kundan choker embellished with vibrant stones and delicate pearl cluster drops","/images/products/RJS00004/ruby.webp;/images/products/RJS00004/emerald.webp",2799,2299,"6;4","Ruby;Emerald"
-RJS00005,Antique Temple Bangles,Bangles,"Pair of intricately carved temple bangles with antique gold finish","/images/products/RJS00005/antique-gold.webp;/images/products/RJS00005/rose-gold.webp",1899,,"4;0","Antique Gold;Rose Gold"
-RJS00006,Chandbali Earrings,Earrings,"Grand crescent moon chandbali earrings adorned with faux pearls and kundan stones","/images/products/RJS00006/gold.webp",1299,999,"8","Antique Gold"
-RJS00007,Royal Heritage Maang Tikka,Bridal Jewellery,"Delicate handcrafted bridal maang tikka designed for traditional wedding ceremonies","/images/products/RJS00007/gold.webp",1199,,"5","Imperial Gold"
-RJS00008,Handcrafted Temple Kada,Bangles,"Statement openable single kada bangle with antique floral carvings and clasp","/images/products/RJS00008/gold.webp",1599,1399,"7","Temple Gold"
+RJS00001,Temple Necklace,Necklaces,Traditional temple-inspired necklace featuring sacred motifs and antique handcrafting,/images/products/RJS00001/gold-front.webp;/images/products/RJS00001/gold-detail.webp,2499,1999,5;2,Gold;Antique Gold
+RJS00002,Pearl Jhumkas,Earrings,Elegant pearl-look jhumka earrings with intricate filigree bells and lustrous drops,/images/products/RJS00002/pearl.webp,899,,12,Pearl White
+RJS00003,Bridal Necklace Set,Bridal Jewellery,Statement jewellery set for festive celebrations and royal trousseaus,/images/products/RJS00003/red-front.webp;/images/products/RJS00003/green-front.webp,3499,2999,3;4,Ruby Red;Emerald Green
+RJS00004,Royal Kundan Choker,Necklaces,Regal kundan choker embellished with vibrant stones and delicate pearl cluster drops,/images/products/RJS00004/ruby.webp;/images/products/RJS00004/emerald.webp,2799,2299,6;4,Ruby;Emerald
+RJS00005,Antique Temple Bangles,Bangles,Pair of intricately carved temple bangles with antique gold finish,/images/products/RJS00005/antique-gold.webp;/images/products/RJS00005/rose-gold.webp,1899,,4;0,Antique Gold;Rose Gold
+RJS00006,Chandbali Earrings,Earrings,Grand crescent moon chandbali earrings adorned with faux pearls and kundan stones,/images/products/RJS00006/gold.webp,1299,999,8,Antique Gold
+RJS00007,Royal Heritage Maang Tikka,Bridal Jewellery,Delicate handcrafted bridal maang tikka designed for traditional wedding ceremonies,/images/products/RJS00007/gold.webp,1199,,5,Imperial Gold
+RJS00008,Handcrafted Temple Kada,Bangles,Statement openable single kada bangle with antique floral carvings and clasp,/images/products/RJS00008/gold.webp,1599,1399,7,Temple Gold
+RJS00009,Heventhinka Jhumka,Jhumka,Statement openable single kada bangle with antique floral carvings and clasp,/images/products/RJS00008/gold.webp,1599,1399,7,Temple Gold

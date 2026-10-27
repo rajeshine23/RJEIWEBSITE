@@ -447,7 +447,7 @@ export function getSiteSettings(): SiteSettings {
     whatsappPhoneNumber: "",
     announcementText: "Welcome to RAJISHINE — Pure Elegance for Every Celebration",
     instagramUrl: "",
-    contactEmail: "care@rajishine.com",
+    contactEmail: "rajeshine23@gmail.com",
     footerCopyright: `© ${new Date().getFullYear()} RAJISHINE. All rights reserved.`,
     defaultSeoDescription:
       "RAJISHINE presents handcrafted Indian fashion and bridal jewellery. Explore temple necklaces, bridal sets, jhumkas, and bangles designed with timeless luxury.",
