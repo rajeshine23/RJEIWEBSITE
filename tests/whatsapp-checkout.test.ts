@@ -40,7 +40,7 @@ describe("WhatsApp Checkout & Order Messaging Suite", () => {
     whatsappCountryCode: "+91",
     whatsappPhoneNumber: "919876543210",
     announcementText: "Welcome to RAJISHINE",
-    instagramUrl: "https://instagram.com/rajishine.jewels",
+    instagramUrl: "https://www.instagram.com/raji_fashion_jewelry",
     contactEmail: "care@rajishine.com",
     footerCopyright: "© 2026 RAJISHINE",
     defaultSeoDescription: "Fine Indian Jewellery",

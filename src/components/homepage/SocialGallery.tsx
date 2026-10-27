@@ -10,8 +10,8 @@ interface SocialGalleryProps {
 
 export function SocialGallery({
   title = "Follow Our World on Instagram",
-  subtitle = "@rajishine.jewels • Tag #RajiShineBride to be featured",
-  instagramUrl = "https://instagram.com/rajishine.jewels",
+  subtitle = "@raji_fashion_jewelry • Tag #RajiFashionJewelry to be featured",
+  instagramUrl = "https://www.instagram.com/raji_fashion_jewelry",
 }: SocialGalleryProps) {
   const images = [
     { src: "/images/homepage/social-1.webp", alt: "Bridal Grace Jewellery Moment" },
