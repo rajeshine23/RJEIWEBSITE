@@ -47,7 +47,9 @@ jobs:
         run: |
           npm run build
           touch out/.nojekyll
+          echo "rajishine.com" > out/CNAME
         env:
+          NEXT_PUBLIC_CUSTOM_DOMAIN: "true"
           NEXT_PUBLIC_SITE_URL: "https://rajishine.com"
           NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-Y53V4D67TS' }}
           NEXT_PUBLIC_POSTHOG_KEY: ${{ secrets.NEXT_PUBLIC_POSTHOG_KEY || 'phc_x3kWyozsxZfzmxqN6HuwHDwD6dpbnMuQYsXYUNV7TJW9' }}
